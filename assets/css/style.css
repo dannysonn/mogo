@@ -276,44 +276,47 @@ hr {
 }
 
 
-/* About */
-.about {
+/* Card */
+.card {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }
 
-.about__item {
-    position: relative;
+.card__item {
     width: 380px;
+}
+
+.card__inner {
+    position: relative;
     background-color: #95e1d3;
 }
 
-.about__item:hover .about__img {
+.card__inner:hover .card__img {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.about__item:hover .about__img img {
+.card__inner:hover .card__img img {
     opacity: 0.1;
 }
 
-.about__item:hover .about__text {
+.card__inner:hover .card__text {
     opacity: 1;
 }
 
-.about__img {
+.card__img {
     background: linear-gradient(to bottom,
     #f38181, #fce38a);
 
     transition: transform 0.2s linear;
 }
 
-.about__img img {
+.card__img img {
     transition: opacity 0.1s linear;
     display: block;
 }
 
-.about__text {
+.card__text {
     width: 100%;
     font-size: 18px;
     color: white;
@@ -329,6 +332,26 @@ hr {
     transform: translate3d(0, -50%, 0);
 
     transition: opacity 0.2s linear;
+}
+
+.card__info {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.card__name {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 14px;
+}
+
+.card__prof {
+    color: #999999;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 
@@ -448,7 +471,7 @@ hr {
 }
 
 .accordion__item.active
-.accordion__header:after{
+.accordion__header:after {
     transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
@@ -573,4 +596,42 @@ hr {
 .reviews__btn--next {
     right: 0;
     transform: rotate(135deg);
+}
+
+
+/* Social */
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.social__item:last-child {
+    border-right: none;
+}
+
+.social__item:hover {
+    color: white;
+    background-color: #f38181;
+}
+
+
+/* Logos */
+.logos {
+    display: flex;
+    justify-content: space-between;
 }
