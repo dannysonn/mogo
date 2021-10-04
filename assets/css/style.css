@@ -472,7 +472,6 @@ hr {
 /* We do */
 .wedo {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -1258,6 +1257,11 @@ hr {
     }
 
     /* Wedo */
+    .wedo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .wedo__img {
         display: none;
     }
